@@ -259,3 +259,44 @@ textarea {
   line-height: 1.5;
   resize: vertical;
 }
+
+/* Web apps (Chrome, Claude, Gemini…) */
+.w20m-web-frame {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-solid);
+  margin-bottom: 16px;
+}
+
+.w20m-web-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.w20m-web-desc {
+  margin: 0 0 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.w20m-web-open {
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.w20m-web-host {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}

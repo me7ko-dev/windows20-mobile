@@ -1,4 +1,4 @@
-const CACHE = 'w20-shell-v1'
+const CACHE = 'w20-shell-v2'
 
 const ASSETS = [
   './',
@@ -9,8 +9,10 @@ const ASSETS = [
   './core/plugin-registry.js',
   './core/theme.js',
   './core/shell.js',
+  './core/web-app.js',
   './apps/notes.js',
   './apps/settings.js',
+  './apps/web-apps.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png'

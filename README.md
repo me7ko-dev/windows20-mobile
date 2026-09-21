@@ -26,10 +26,19 @@ core/
   plugin-registry.js   The single extension point — apps self-register here
   theme.js             Dark/light/system theme, persisted to localStorage
   shell.js             Home screen grid + fullscreen app view + back navigation
+  web-app.js           Turns a web destination into an app definition
 apps/
   notes.js             Built-in app: notes stored in localStorage
   settings.js          Built-in app: theme switcher
+  web-apps.js          Chrome, Claude, Claude Code, Gemini… as home-screen icons
 ```
+
+**Desktop programs on a phone:** `apps/web-apps.js` registers the familiar
+desktop tools (Chrome, Claude, Claude Code, Gemini, ChatGPT, GitHub, VS Code,
+YouTube) as icons. A PWA cannot run a Windows `.exe`, so each icon opens that
+tool's official web version instead — and since those sites all send
+`X-Frame-Options`/`frame-ancestors`, they open outside the shell rather than in
+a blank iframe.
 
 Adding a new app: create `apps/my-app.js` that calls
 `registerApp({ id, title, icon, mount(container) })`, then import it from
