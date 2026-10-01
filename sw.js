@@ -1,4 +1,4 @@
-const CACHE = 'w20-shell-v1'
+const CACHE = 'w20-shell-v2'
 
 const ASSETS = [
   './',
